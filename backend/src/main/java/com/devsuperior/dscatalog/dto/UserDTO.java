@@ -9,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 
 import com.devsuperior.dscatalog.entities.User;
 
+
 public class UserDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
@@ -16,6 +17,8 @@ public class UserDTO implements Serializable{
 	@NotBlank(message = "Campo obrigatório")
 	private String firstName;
 	private String lastName;
+	
+	
 	@Email(message= "Favor entrar um email válido")
 	private String email;
 	
